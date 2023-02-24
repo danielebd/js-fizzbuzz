@@ -23,20 +23,19 @@ h1 {
     margin: 0 auto;
     max-width: 80%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-wrap: wrap; 
 }
 
 
 .box-number, .box-fizz, .box-buzz, .box-fizzbuzz {
     width: 6.25rem;
     height: 6.25rem;
-    line-height: 3.125rem;
-    vertical-align: baseline;
-    padding: 20px 0;
+    padding: 1.25rem 0;
     background-color: white;
-    text-align: center;
-    margin: 5px;
+    margin: .3125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .box-number {

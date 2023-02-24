@@ -57,7 +57,15 @@ const container = document.querySelector('div.container');
 
 for (let index = 1; index <= 100; index++) {
 
-    if ( index % 3 === 0) {
+    if( index % 15 === 0){
+        const box = document.createElement('div');
+        box.append('fizzbuzz');
+        container.append(box);
+        box.classList.add('box-fizzbuzz');
+        console.log(box);
+    }
+
+    else if ( index % 3 === 0) {
         const box = document.createElement('div');
         box.append('fizz');
         container.append(box);
@@ -65,31 +73,19 @@ for (let index = 1; index <= 100; index++) {
         console.log(box);
     }
 
-    if( index % 5 === 0){
+    else if( index % 5 === 0){
         const box = document.createElement('div');
         box.append('buzz');
         container.append(box);
         box.classList.add('box-buzz');
-
         console.log(box);
     }
 
-    if( index % 15 === 0){
-        const box = document.createElement('div');
-        box.append('fizzbuzz');
-        container.append(box);
-        box.classList.add('box-fizzbuzz');
-
-        console.log(box);
-    }
-
-
-    if (index % 3 !== 0 && index % 5 !== 0) {
+    else {
         const box = document.createElement('div');
         box.append(index);
         container.append(box);
         box.classList.add('box-number');
-
         console.log(box);
     }
 
